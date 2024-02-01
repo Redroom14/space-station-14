@@ -151,22 +151,16 @@ public sealed class EntityHealthBarOverlay : Overlay
     {
         if (progress >= 1.0f)
         {
-            return SeaBlue;
+            return new Color(0f, 1f, 0f);
         }
-
+        // lerp
         if (!crit)
         {
-            switch (progress)
-            {
-                case > 0.90F:
-                    return SeaBlue;
-                case > 0.50F:
-                    return Violet;
-                case > 0.15F:
-                    return Ruber;
-            }
+            var hue = (5f / 18f) * progress;
+            return Color.FromHsv((hue, 1f, 0.75f, 1f));
+        } else
+        {
+            return Color.Red;
         }
-
-        return VividGamboge;
     }
 }
