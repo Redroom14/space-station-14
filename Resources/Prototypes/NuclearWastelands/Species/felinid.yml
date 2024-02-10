@@ -1,0 +1,37 @@
+#- type: species                  Откат фелинидов в связи с ошибками
+#  id: Felinid
+#  name: species-name-felinid
+#  roundStart: true                   
+#  prototype: MobFelinid
+#  sprites: MobHumanSprites
+#  markingLimits: MobFelinidMarkingLimits
+#  dollPrototype: MobFelinidDummy
+#  skinColoration: HumanToned
+
+
+- type: markingPoints
+  id: MobFelinidMarkingLimits
+  points:
+    Hair:
+      points: 1
+      required: false
+    FacialHair:
+      points: 1
+      required: false
+    Tail: # the cat tail joke
+      points: 1 
+      required: true
+      defaultMarkings: [ FelinidTail ]
+    HeadTop: # the cat ear joke
+      points: 1 
+      required: true
+      defaultMarkings: [ FelinidEarsBasic ]
+    Chest:
+      points: 1
+      required: false
+    Legs:
+      points: 2
+      required: false
+    Arms:
+      points: 2
+      required: false

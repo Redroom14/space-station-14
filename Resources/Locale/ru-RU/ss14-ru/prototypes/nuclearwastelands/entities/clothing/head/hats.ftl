@@ -1,0 +1,13 @@
+ent-ClothingHeadHatCapSS = чёрная фуражка
+    .desc = Wenn Die Soldaten Durch Die Stadt Marschieren...
+ent-ClothingHeadHatBeretBlueshieldAlt = берет синего щита
+    .suffix = Альтернативный
+    .desc = Отличительный признак первоклассного бойца.
+ent-ClothingHeadHatBeretPilotCGroup = чёрный берет
+    .desc = Почему он чёрный?
+ent-ClothingHeadHatBeretComCGroup = берет Командира C-Group
+    .desc = Некоторым больно на него смотреть.
+ent-ClothingHeadHatBeretBlueshield = берет синего щита
+    .desc = Отличительный признак первоклассного бойца.    
+ent-ClothingHeadHatBeretBrigmed = берет бригмедика
+    .desc = Красный берет с ярким белым крестом, показывающий всем что вы - Медик.    

@@ -1,0 +1,15 @@
+#Гарнитура Красноармейцев
+- type: entity
+  parent: ClothingHeadsetAlt
+  id: ClothingHeadsetAltRedArmy
+  name: redarmy headset
+  description: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyRedArmy
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Ears/Headsets/redarmy.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Ears/Headsets/redarmy.rsi

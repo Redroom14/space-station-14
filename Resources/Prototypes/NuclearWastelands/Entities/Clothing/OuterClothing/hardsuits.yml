@@ -1,0 +1,99 @@
+#Если вы добавляете новый скафандр, то пожалуйста классифицируйте их по организациям/отделам (если вы этого не сделаете - я вас найду и сожгу)
+
+#                       C-Group hardsuits
+#Скафандр Пилота 
+- type: entity
+  parent: ClothingOuterHardsuitSecurity
+  id: ClothingOuterHardsuitPilotCGroup
+  name: C-Group pilot hardsuit
+  description: Filled
+  suffix: В РАЗРАБОТКЕ!
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/OuterClothing/Hardsuits/cgpilot.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/OuterClothing/Hardsuits/cgpilot.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.45
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.6
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.5
+        Piercing: 0.5
+        Radiation: 0.5
+        Caustic: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitPilotCGroup
+#                    End
+
+#                 War Pigs | Боевые Кабаны
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitWarPigs
+  name: space marines hardsuit
+  description: Filled
+  suffix: В РАЗРАБОТКЕ!
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/OuterClothing/Hardsuits/mk7_aquila.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/OuterClothing/Hardsuits/mk7_aquila.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.45
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.25
+        Cold: 0.25
+        Slash: 0.25
+        Piercing: 0.25
+        Radiation: 0.0
+        Caustic: 0.4
+        Shock: 0.25
+        Heat: 0.25
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitWarPigs
+
+- type: entity
+  parent: ClothingOuterHardsuitWarPigs
+  id: ClothingOuterHardsuitWarPigsMedic
+  name: space marines medic hardsuit
+  description: Filled
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/OuterClothing/Hardsuits/mk7_aquilamedic.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/OuterClothing/Hardsuits/mk7_aquilamedic.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitWarPigsMedic
+#                    End
+
+#БК Обычный и медицинский:
+# Brut, Piercing, Slash: 75
+# Heat: 75 
+# Caustic: 60
+# Shock: 25
+# Radiation: 100
+# Explosion: 80
+# замедление на 20
+
+# Трерминатор:
+# Brut, Piercing, Slash: 85
+# Heat: 85 
+# Caustic: 80
+# Radiation: 100
+# Explosion: 95
+# замедление на 30

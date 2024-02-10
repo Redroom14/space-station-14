@@ -1,0 +1,12 @@
+#Солнышко)
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckShoulderPatchSun
+  name: shoulder patch
+  suffix: It's the sun! 
+  description: A beautiful red headband with a white sun. Beauty! 
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Neck/Misc/sun.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Neck/Misc/sun.rsi

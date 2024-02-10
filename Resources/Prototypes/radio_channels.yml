@@ -90,8 +90,16 @@
 - type: radioChannel
   id: Freelance
   name: chat-radio-freelance
-  keycode: 'f'
+  keycode: 'ф' # NuclearWastelands-Localization
   frequency: 1984
   color: "#f6ce64"
   # long range since otherwise it'd defeat the point of a handheld radio independent of telecomms
   longRange: true
+
+- type: radioChannel
+  id: RedArmy # NuclearWastelands
+  name: Red Army
+  keycode: 'й'
+  frequency: 2873
+  color: "#E60000"
+  longRange: true  

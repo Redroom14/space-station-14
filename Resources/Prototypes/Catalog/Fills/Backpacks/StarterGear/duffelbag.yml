@@ -47,7 +47,10 @@
   components:
   - type: StorageFill
     contents:
+      - id: BoxSurvivalBrigmedic      
       - id: Flash
+      - id: MagazinePistolRubber
+      - id: Cautery
 
 - type: entity
   noSpawn: true

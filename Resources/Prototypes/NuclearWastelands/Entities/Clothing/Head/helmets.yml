@@ -1,0 +1,43 @@
+#"Маска-1щ"" / Красная Армия
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetRedArmyMaska1sch
+  name: helmet "Maska-1sch"
+  description: Filled
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Head/Helmets/1sch.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Head/Helmets/1sch.rsi
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.9
+        Piercing: 0.85
+        Heat: 0.9
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+
+#СШ-40 / Красная Армия
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetRedArmysh40
+  name: helmet SH-40
+  description: Filled
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Head/Helmets/sh40.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Head/Helmets/sh40.rsi
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.95
+  - type: Tag
+    tags:
+    - WhitelistChameleon    

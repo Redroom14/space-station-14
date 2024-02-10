@@ -1,0 +1,10 @@
+ent-ClothingUniformJumpsuitSSOfficer = офицерская форма
+    .desc = Роскошная чёрная форма сшитая компанией "Hugo Boss" специально для элитных офицеров.
+ent-ClothingUniformJumpsuitCGroupMerc = серый комбинезон наёмника C-Group
+    .desc = Он серый. Прям как... Серость.
+ent-ClothingUniformJumpsuitPilotCGroup = комбинезон пилота C-Group
+    .desc = Он чёрный. Почему? Вопросы к НИО C-Group.   
+ent-ClothingUniformJumpsuitERTCadet = униформа синего щита
+    .desc = Лёгкая и дышащая униформа, изготовленная специально для Кадетов ОБР.
+ent-ClothingUniformJumpsuitPvtRedArmy = гимнастёрка
+    .desc = Старая гимнастёрка с облезшим советским ремнём. Когда то такие использовались солдатами Красной Армии.    

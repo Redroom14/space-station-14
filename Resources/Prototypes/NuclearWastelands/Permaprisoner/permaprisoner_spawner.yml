@@ -1,0 +1,118 @@
+#Сущность хуманойды
+- type: entity
+  id: MobHumanoidPermaPrisoner
+  name: Заключённый пермабрига
+  suffix: Humanoids
+  components:
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    state: prisoner
+  - type: RandomHumanoidSpawner
+    settings: PermaPrissettings
+
+#сущность человек
+- type: entity
+  parent: MobHuman
+  id: MobHumanPermaPrisoner
+  name: Заключённый пермабрига
+  components:
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    state: prisoner
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: Loadout
+    prototypes: [PermaPrisonerGear]
+  - type: RandomMetadata
+    nameSegments:
+    - names_first_male
+    - names_last_male
+
+#Настройки спавна
+- type: randomHumanoidSettings
+  speciesBlacklist: # Nuclear Wastelands
+    - Diona
+  id: PermaPrissettings
+  component:
+  - type: Loadout
+    prototypes: [PermaPrisonerGear]
+  - type: RandomMetadata
+    nameSegments: [name_first_male, name_last_male]
+
+#Роль
+- type: job
+  id: PermaPrisonerRole
+  name: заключённый пермабрига
+  description: Отбывайте срок в пермабриге и пытайтесь сбежать!
+  playTimeTracker: RolePermaPrisonertracker
+  setPreference: false
+  startingGear: PermaPrisonerGear
+  icon: "JobIconPermaPrisoner"
+  supervisors: job-supervisors-security
+
+#Снаряжение
+- type: startingGear
+  id: PermaPrisonerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPrisoner
+    id: PermaPrisonerPDA
+    ears: ClothingHeadsetGrey
+    shoes: ClothingShoesColorBlack
+  innerClothingSkirt: ClothingUniformJumpskirtPrisoner
+
+#Трекер времени роли
+- type: playTimeTracker
+  id: RolePermaPrisonertracker
+
+# Отображаемая иконка
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconPermaPrisoner
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Prisoner
+
+# Айди карта
+- type: entity
+  parent: PassengerIDCard
+  id: PermaPrisonerIDCard
+  name: ID карта заключённого пермабрига
+  components:
+  - type: PresetIdCard
+    job: PermaPrisonerRole
+  - type: Sprite
+    layers:
+    - state: default
+    - state: prisoner_002
+
+# КПК
+- type: entity
+  parent: BasePDA
+  id: PermaPrisonerPDA
+  name: КПК заключённого пермабрига
+  description: И как вы дошли до такой жизни?
+  components:
+  - type: Pda
+    id: PermaPrisonerIDCard
+    state: pda-permaprisoner
+  - type: Icon
+    state: pda-permaprisoner
+
+#Спавнер гостроли
+- type: entity
+  id: SpawnPointGhostPermaPrisoner
+  name: ghost role spawn point
+  suffix: PermaPrisoner
+  parent: MarkerBase
+  components:
+  - type: GhostRole
+    name: Заключённый пермабрига
+    description: Отбывайте свой срок в пермабриге, общайтесь с сокамерниками и мечтайте о грандиозном побеге!
+    rules: На вас НЕ действуют стандартные правила сервера. РДМте, гриферите и крушите сколько угодно! (в соответсвии с проведённым голосованием, ЕРП в открытых местах и оскорбление в AHelp также запрещены)
+  - type: GhostRoleMobSpawner
+    prototype: MobHumanPermaPrisoner
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green

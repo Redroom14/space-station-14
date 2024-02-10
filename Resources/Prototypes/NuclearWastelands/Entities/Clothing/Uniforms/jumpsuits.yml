@@ -1,0 +1,61 @@
+# Форма офицера сс
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSSOfficer
+  name: officer's uniform
+  description: A luxurious black uniform sewn by "Hugo Boss" specifically for elite officers. 
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Uniforms/Jumpsuit/ss.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Uniforms/Jumpsuit/ss.rsi
+
+
+                          #C-Group#
+# Комбинезон Наёмника                          
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCGroupMerc
+  name: grey C-Group mercenary jumpsuit
+  description: It's grey. Just like that... Grayness.
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Uniforms/Jumpsuit/cgmerc.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Uniforms/Jumpsuit/cgmerc.rsi
+# Комбинезон Пилота
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPilotCGroup
+  name: C-Group pilot jumpsuit
+  description: He's black. Why? Questions for the R&D C-Group.
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Uniforms/Jumpsuit/cgpilot.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Uniforms/Jumpsuit/cgpilot.rsi    
+                          #End#                          
+
+# Гимнастёрка Красноармейца
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPvtRedArmy
+  name: red army uniform
+  description: Filled
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Uniforms/Jumpsuit/redarmy_pvt.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Uniforms/Jumpsuit/redarmy_pvt.rsi      
+
+# Комбинезон Синего Щита
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitERTCadet
+  name: ERT cadet uniform
+  description: A special suit made for the ERT cadets.
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Uniforms/Jumpsuit/ert_cadet.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Uniforms/Jumpsuit/ert_cadet.rsi                    

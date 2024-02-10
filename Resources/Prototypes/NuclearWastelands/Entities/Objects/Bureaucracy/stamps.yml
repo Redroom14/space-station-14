@@ -1,0 +1,34 @@
+            #Папка "Bureaucracy" создана,
+            #так как это тоже банально
+            #удобней, чем если всё
+            #расположено в одном файле.
+
+#USDB
+- type: entity
+  name: USDB stamp
+  suffix: don't maping!
+  parent: RubberStampBase
+  id: RubberStampUSDB
+  components:
+  - type: Stamp
+    stampedName: "United-Space"
+    stampedColor: "#000000"
+    stampState: "paper_stamp-trader"
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    state: stamp-trader
+
+#C-Group
+- type: entity
+  name: C-Group stamp
+  suffix: don't maping!
+  parent: RubberStampBase
+  id: RubberStampCG
+  components:
+  - type: Stamp
+    stampedName: C-Group
+    stampedColor: "#3681bb"
+    stampState: "paper_stamp-cap"
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    state: stamp-cap

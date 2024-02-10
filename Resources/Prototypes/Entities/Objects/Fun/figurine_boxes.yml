@@ -48,6 +48,8 @@
         orGroup: SpacemenFig
       - id: ToyFigurineSecurity
         orGroup: SpacemenFig
+      - id: ToyFigurineBrigmedic # Workbench-Team - Tamioki
+        orGroup: SpacemenFig        
       - id: ToyFigurineLawyer
         orGroup: SpacemenFig
       - id: ToyFigurineCargoTech

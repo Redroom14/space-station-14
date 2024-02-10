@@ -1,0 +1,28 @@
+# Эскадрон Смерти
+
+- type: entity
+  id: RandomHumanoidSpawnerDeathSquadNuclearWastelands
+  name: эскадрон смерти
+  components:
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    state: CCdeath
+  - type: RandomHumanoidSpawner
+    settings: Deathsquad
+
+- type: randomHumanoidSettings
+  id: Deathsquad
+  randomizeName: false
+  speciesBlacklist:
+  - Diona
+  components:
+  - type: GhostRole
+    name: Эскадрон смерти
+    description: Если вы прибыли, вероятно, спасение станции невозможно.
+  - type: GhostTakeoverAvailable
+  - type: Loadout
+    prototypes: [ DeathSquadGear ]
+  - type: RandomMetadata
+    nameSegments:
+    - SyndicateNamesPrefix
+    - SyndicateNamesNormal

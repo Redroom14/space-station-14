@@ -1,0 +1,218 @@
+# Игровая роль
+- type: job
+  id: BlueShield
+  name: job-name-blueshield
+  description: job-description-blueshield
+  playTimeTracker: JobBlueShield
+  requirements:
+  # - !type:DepartmentTimeRequirement
+    # department: Command
+    # time: 72000 # NuclearWastelands // 20 часов за командование.
+  - !type:OverallPlaytimeRequirement
+    time: 72000 # NuclearWastelands // 20 часов.
+  startingGear: BlueShieldGear
+  icon: "JobIconBlueShield"
+  requireAdminNotify: true
+  joinNotifyCrew: true
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  access:
+  - Command
+  - Bar
+  - Service
+  - Maintenance
+  - Janitor
+  - Theatre
+  - Kitchen
+  - Chapel
+  - Hydroponics
+  - External
+  - Chemistry
+  - Engineering
+  - Research
+  - Detective
+  - Salvage
+  - Security
+  - Brig
+  - Cargo
+  - Atmospherics
+  - Cargo
+  - Medical
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+
+# Отображаемая иконка
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconBlueShield
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: BlueShield
+
+# Начальное снаряжение
+- type: startingGear
+  id: BlueShieldGear
+  equipment:
+    shoes: ClothingShoesBootsJack
+    jumpsuit: ClothingUniformJumpsuitERTCadet
+    gloves: ClothingHandsGlovesCombat
+    eyes: ClothingEyesGlassesSunglassesModified
+    ears: ClothingHeadsetCommand
+    head: ClothingHeadHatBeretBlueshield
+    outerClothing: ClothingOuterVestWeb
+    pocket1: HandheldCrewMonitor
+    pocket2: WeaponPulsePistol
+    id: BlueShieldPDA 
+    belt: ClothingBeltBlueshieldWebbing
+    back: ClothingBackpackBlueShieldFilled
+  satchel: ClothingBackpackSatchelBlueShieldFilled
+  duffelbag: ClothingBackpackDuffelBlueShieldFilled
+  
+
+# Печать сотрудника
+- type: entity
+  name: печать синего щита
+  parent: RubberStampBase
+  id: RubberStampBlueshield
+  suffix: DO NOT MAP
+  components:
+  - type: Stamp
+    stampedName: Синий Щит
+    stampedColor: "#003f7f"
+    stampState: "paper_stamp-cap"
+  - type: Sprite
+    sprite: Objects/Misc/stamps.rsi
+    state: stamp-cap
+  
+# Рюкзак
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackBlueShieldFilled
+  description: Это рюкзак, от которого так и веет чувством защищённости.
+  name: Рюкзак синего щита
+  suffix: Заполненный
+  components:
+    - type: StorageFill
+      contents:
+        - id: BoxSurvivalBrigmedic
+        - id: MedkitCombatFilled
+        - id: TrackingImplanter
+        - id: TrackingImplanter
+        - id: Flash
+        - id: RubberStampBlueshield
+    - type: Sprite
+      sprite: NuclearWastelands/Clothing/Back/Backpacks/blueshield.rsi 
+    - type: Storage
+      grid:
+      - 0,0,7,3    
+#      capacity: 130
+#      maxTotalWeight: 40
+      
+
+# Вещмешок
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelBlueShieldFilled
+  description: Это вещмешок, от которого так и веет чувством защищённости.
+  name: Вещмешок синего щита
+  suffix: Заполненный
+  components:
+    - type: StorageFill
+      contents:
+        - id: BoxSurvivalBrigmedic
+        - id: MedkitCombatFilled
+        - id: TrackingImplanter
+        - id: TrackingImplanter
+        - id: Flash
+        - id: RubberStampBlueshield
+    - type: Sprite
+      sprite: NuclearWastelands/Clothing/Back/Duffels/blueshield.rsi 
+    - type: Storage
+      grid:
+      - 0,0,8,4    
+#      capacity: 150
+#      maxTotalWeight: 48
+
+# Сумка
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackSatchelBlueShieldFilled
+  description: Это сумка, от которой так и веет чувством защищённости.
+  name: Сумка синего щита
+  suffix: Заполненный
+  components:
+    - type: StorageFill
+      contents:
+        - id: BoxSurvivalBrigmedic
+        - id: MedkitCombatFilled
+        - id: TrackingImplanter
+        - id: TrackingImplanter
+        - id: Flash
+        - id: RubberStampBlueshield
+    - type: Sprite
+      sprite: NuclearWastelands/Clothing/Back/Satchels/blueshield.rsi 
+    - type: Storage
+      grid:
+      - 0,0,7,3    
+#      capacity: 130
+#      maxTotalWeight: 40
+
+# Разгрузка
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltBlueshieldWebbing
+  description: Разгрузка для самых робастных!
+  name: РПС Синего щита
+  suffix: Заполненный
+  components:
+    - type: StorageFill
+      contents:
+        - id: WeaponRevolverDeckard
+        - id: SpeedLoaderMagnum
+        - id: SpeedLoaderMagnum
+        - id: SpeedLoaderMagnumRubber
+        - id: CombatMedipen
+        - id: EmergencyMedipen
+        - id: EmergencyMedipen
+        - id: Zipties
+        - id: Zipties
+    - type: Sprite
+      sprite: NuclearWastelands/Clothing/Belt/blueshield_webbing.rsi
+#    - type: Storage
+#      capacity: 40
+#      maxSlots: 10
+
+# КПК
+- type: entity
+  parent: BasePDA
+  id: BlueShieldPDA
+  name: КПК синего щита
+  description: Это пахнет профессионализмом.
+  components:
+  - type: Pda
+    id: BlueShieldIDCard
+    state: pda-blueshield
+  - type: PdaBorderColor
+    borderColor: "#1e2149"
+    accentHColor: "#4960b6"    
+    accentVColor: "#4960b6"
+  - type: Icon
+    state: pda-blueshield
+  - type: HealthAnalyzer
+    scanDelay: 2.5
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"  
+
+# Маркер спавна
+- type: entity
+  id: SpawnPointBlueShield
+  parent: SpawnPointJobBase
+  name: blueshield
+  components:
+  - type: SpawnPoint
+    job_id: BlueShield
+  - type: Sprite
+    layers:
+    - state: green
+    - state: blueshield

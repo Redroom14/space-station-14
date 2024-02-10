@@ -243,3 +243,17 @@
       layers:
         - state: crypt_rusted
         - state: pirate_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyRedArmy # NuclearWastelands
+  name: ключ шифрования красной армии 
+  description: Ключ шифрования используемый коммунистами.
+  components:
+  - type: EncryptionKey
+    channels:
+    - RedArmy
+    defaultChannel: RedArmy
+  - type: Sprite
+    layers:
+    - state: crypt_redarmy

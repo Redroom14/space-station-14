@@ -1,0 +1,30 @@
+#чёрные кожаные перчатки
+- type: entity
+  parent: ClothingHandsGlovesColorBlack
+  id: ClothingHandsGlovesLeatherBlackSS
+  name: black leather gloves 
+  description: Thick leather gloves that will reach your elbows.
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Hands/Gloves/ss_glove.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Hands/Gloves/ss_glove.rsi
+  - type: GloveHeatResistance
+    heatResistance: 1400
+  - type: Fiber
+    fiberMaterial: fibers-leather
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsRedArmyGlovesCombat
+  name: RA combat gloves
+  description: Filled
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Hands/Gloves/redarmycombat.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Hands/Gloves/redarmycombat.rsi
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+    fiberColor: fibers-olive

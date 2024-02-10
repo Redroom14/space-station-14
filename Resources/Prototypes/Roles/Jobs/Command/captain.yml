@@ -6,24 +6,24 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 72000 #20 hrs # Corvax-RoleTime
+      time: 36000 #10 hrs # NuclearWastelands-RoleTime
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 72000 #20 hrs # Corvax-RoleTime
+      time: 36000 #10 hrs # NuclearWastelands-RoleTime
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 72000 #20 hrs # Corvax-RoleTime
+      time: 36000 #10 hrs # NuclearWastelands-RoleTime
 #    - !type:DepartmentTimeRequirement
 #      department: Command
 #      time: 54000 # 15 hours
     - !type:OverallPlaytimeRequirement
-      time: 504000 #140 hrs # Corvax-RoleTime
+      time: 110000 #30 hrs # NuclearWastelands-RoleTime
   weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"
   requireAdminNotify: true
   joinNotifyCrew: true
-  supervisors: job-supervisors-centcom
+  supervisors: job-supervisors-centcom # Corvax-JobSupervisors
   canBeAntag: false
   accessGroups:
   - AllAccess
@@ -41,7 +41,7 @@
     back: ClothingBackpackCaptainFilled
     shoes: ClothingShoesBootsLaceup
     head: ClothingHeadHatCaptain
-    eyes: ClothingEyesGlassesSunglasses
+    eyes: ClothingEyesGlassesSunglassesModified # NuclearWastelands
     gloves: ClothingHandsGlovesCaptain
     outerClothing: ClothingOuterArmorCaptainCarapace
     id: CaptainPDA

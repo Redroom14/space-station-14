@@ -1,0 +1,14 @@
+#пояс SS
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltLeatherSS
+  name: leather belt
+  description: A comfortable leather belt that will look harmoniously with your shape. 
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Belt/ss_belt.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Belt/ss_belt.rsi
+  - type: Storage
+#    capacity: 50
+    maxSlots: 15

@@ -1,0 +1,43 @@
+#шинель сс
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatSSGreatcoat
+  name: SS armored greatcoat 
+  description: It is an armored greatcoat used by officers of the elite SS troops. There are silver shoulder straps and a buttonhole, characteristic of the title "Obersturmführer". 
+  components:
+    - type: Sprite
+      sprite: NuclearWastelands/Clothing/OuterClothing/Coats/ss_greatcoat.rsi
+    - type: Clothing
+      sprite: NuclearWastelands/Clothing/OuterClothing/Coats/ss_greatcoat.rsi
+    - type: Armor
+      modifiers:
+       coefficients:
+         Blunt: 0.7
+         Slash: 0.7
+         Piercing: 0.4
+         Heat: 0.6
+         Caustic: 0.75
+
+#тулуп Красноармейца
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterCoatRedArmy
+  name: red army coat
+  description: Warm winter sheepskin coat with an old Soviet belt.
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/OuterClothing/Coats/redarmy_coat.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/OuterClothing/Coats/redarmy_coat.rsi
+
+#Ветровка Бригмеда
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatBrigmedicWB
+  name: brigmedic windbreaker
+  description: A brigmedic's trusty windbreaker, for all the space wind.
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/OuterClothing/Coats/windbreaker_brigmedic.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/OuterClothing/Coats/windbreaker_brigmedic.rsi     

@@ -26,8 +26,8 @@
     spawned:
     - id: FoodMeatLizard
       amount: 5
-  - type: Inventory
-    speciesId: reptilian
+ # - type: Inventory
+ #   speciesId: reptilian
   - type: LizardAccent
   - type: Speech
     speechSounds: Lizard
@@ -69,5 +69,4 @@
   components:
   - type: HumanoidAppearance
     species: Reptilian
-
 #Weh

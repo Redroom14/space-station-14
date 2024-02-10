@@ -1,0 +1,26 @@
+                          #C-Group#
+#КПК Пилота                          
+- type: entity
+  parent: BasePDA
+  id: PDACGroupPilot
+  name: C-Group Pilot's PDA
+  description: Black and Red. It smells like fresh blood.
+  components:
+  - type: Pda
+    id: CBURNIDcard
+    state: pda-pilot
+  - type: Icon
+    state: pda-pilot
+#просто КПК C-Group
+- type: entity
+  parent: BasePDA
+  id: PDACGroup
+  name: C-Group PDA
+  description: Grey, a reminder of the sad fate of the first foundations.
+  components:
+  - type: Pda
+    id: CentcomIDCardDeathsquad
+    state: pda-c-group
+  - type: Icon
+    state: pda-c-group
+                          #End#

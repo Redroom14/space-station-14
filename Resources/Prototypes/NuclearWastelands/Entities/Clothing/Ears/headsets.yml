@@ -1,0 +1,33 @@
+#Гарнитура наёмника C-Group
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetMerc
+  name: Mercenary Headset
+  description: It is used by literally all mercenaries.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyFreelance
+      - EncryptionKeyCentCom
+      - EncryptionKeyStationMaster
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Ears/Headsets/merc.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Ears/Headsets/merc.rsi
+
+#Гарнитура Красноармейцев
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetRedArmy
+  name: redarmy headset
+  description: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyRedArmy
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Ears/Headsets/redarmy.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Ears/Headsets/redarmy.rsi

@@ -1,0 +1,41 @@
+#Бронежилет Красной Армии
+- type: entity
+  parent: ClothingOuterBaseMedium
+  id: ClothingOuterArmorRedArmy
+  name: redarmy armor vest
+  description: Filled
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/OuterClothing/Armor/redarmy.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/OuterClothing/Armor/redarmy.rsi
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.7
+        Piercing: 0.7 
+        Heat: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+
+#Бронежилет 6Б12
+- type: entity
+  parent: ClothingOuterBaseMedium
+  id: ClothingOuterArmorRedArmy6b12
+  name: armor vest 6B12
+  description: Filled
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/OuterClothing/Armor/6b12.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/OuterClothing/Armor/6b12.rsi
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.4 
+        Heat: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.75

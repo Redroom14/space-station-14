@@ -1,0 +1,66 @@
+#Если вы добавляете новый скафандр, то пожалуйста классифицируйте их по организациям/отделам (если вы этого не сделаете - я вас найду и сожгу)
+
+#For now, since locational damage is not a thing, all "combat" hardsuits (with the exception of the deathsquad hardsuit) have the equvilent of a helmet in terms of armor. This is so people don't need to wear both regular, on-station helmets and hardsuits to get full protection.
+#Generally, unless you're adding something like caustic damage, you should probably avoid messing with armor outside of the above scenario.
+
+#                       C-Group hardsuits
+#Шлем скафандра Пилота
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitPilotCGroup
+  noSpawn: true
+  name: C-Group pilot hardsuit helmet
+  description: Filled
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Head/Hardsuits/cgpilot.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Head/Hardsuits/cgpilot.rsi
+  - type: PointLight
+    color: "#ffeead"
+  - type: PressureProtection
+    highPressureMultiplier: 0.45
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+#                    End
+
+#                 War Pigs | Боевые Кабаны
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: ClothingHeadHelmetHardsuitWarPigs
+  noSpawn: false
+  name: space marines hardsuit helmet
+  description: Filled
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Head/Hardsuits/mk7_aquila.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Head/Hardsuits/mk7_aquila.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.45
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHelmetHardsuitWarPigs
+  id: ClothingHeadHelmetHardsuitWarPigsMedic
+  name: space marines medic hardsuit helmet
+  description: Filled
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Head/Hardsuits/mk7_aquilamedic.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Head/Hardsuits/mk7_aquilamedic.rsi
+#                    End

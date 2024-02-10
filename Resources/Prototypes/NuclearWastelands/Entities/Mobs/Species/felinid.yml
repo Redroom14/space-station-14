@@ -1,0 +1,70 @@
+- type: entity
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobFelinid
+  name: Urist McCat
+  noSpawn: true       #Откат фелинидов в связи с ошибками
+  abstract: true
+  save: false
+  components:
+  - type: HumanoidAppearance
+    species: Felinid
+  - type: Hunger
+    starvationDamage:
+      types:
+        Cold: 0.47
+        Bloodloss: 0.5
+  - type: Icon 
+    sprite: NuclearWastelands/Mobs/Species/Felinid/parts.rsi
+    state: full
+  - type: InteractionPopup
+    successChance: 1
+    interactSuccessString: hugging-success-generic
+    interactSuccessSound: /Audio/Effects/thudswoosh.ogg
+    messagePerceivedByOthers: hugging-success-generic-others
+  - type: MindContainer
+    showExamineInfo: true
+  - type: Input
+    context: "human"
+  - type: Body
+    prototype: Felinid
+  - type: MobMover
+  - type: InputMover
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 1.5
+    damageRecovery:
+      types:
+        Asphyxiation: -1.5
+  - type: Speech
+    speechVerb: Human
+  - type: Perishable
+  - type: Alerts
+  - type: Actions
+  - type: Eye
+  - type: CameraRecoil
+  - type: Examiner
+  - type: Thirst  
+  - type: CanHostGuardian
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatHuman
+      amount: 5
+  - type: Vocal
+    wilhelm: "/Audio/NuclearWastelands/Voice/Felinid/cat_wilhelm.ogg"
+    sounds:
+      Male: MaleFelinid
+      Female: FemaleFelinid
+      Unsexed: MaleFelinid
+
+  
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobFelinidDummy
+  name: Urist McHands
+  noSpawn: true
+  components:
+  - type: HumanoidAppearance
+    species: Felinid
+

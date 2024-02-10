@@ -39,6 +39,7 @@
   - Captain
   - IAA # Corvax-IAA
   - CentralCommandOfficial
+  - BlueShield # NuclearWastelands-BlueShield
   - ChiefEngineer
   - ChiefMedicalOfficer
   - HeadOfPersonnel
@@ -77,10 +78,11 @@
   weight: 20
   roles:
   - HeadOfSecurity
-  - SecurityCadet
-  - SecurityOfficer
-  - Detective
   - Warden
+  - SecurityOfficer  
+  - Detective
+  - Brigmedic
+  - SecurityCadet
 
 - type: department
   id: Science

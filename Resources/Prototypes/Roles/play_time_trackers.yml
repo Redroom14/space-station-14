@@ -10,6 +10,9 @@
 - type: playTimeTracker
   id: JobBartender
 
+- type: playTimeTracker
+  id: JobBlueShield     # NuclearWastelands - BlueShield
+
 - type: playTimeTracker # Used as a tracker for all borgs and midround borging.
   id: JobBorg
 
@@ -93,6 +96,9 @@
 
 - type: playTimeTracker
   id: JobParamedic
+
+- type: playTimeTracker # Workbench-Team | Tamioki - Brigmedic
+  id: JobBrigmedic
 
 - type: playTimeTracker
   id: JobPsychologist

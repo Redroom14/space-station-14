@@ -1,0 +1,37 @@
+            #Для разгрузок сделан
+            #отдельный файл, так как
+            #это банально удобней.
+
+
+                          #C-Group# 
+#РПС Наёмника                                     
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltMilitaryWebbingCGmerc
+  name: C-Group mercenary webbing
+  description: Tactical webbing used by C-Group mercenaries.
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Belt/cgmerc_webbing.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Belt/cgmerc_webbing.rsi
+  - type: Item
+    size: Ginormous
+  - type: Storage
+    maxSlots: 10
+#РПС Пилота
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltMilitaryWebbingPilotCG
+  name: C-Group Pilot webbing
+  description: Tactical webbing used by C-Group Pilots.
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Belt/cgpilot_webbing.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Belt/cgpilot_webbing.rsi
+  - type: Item
+    size: Ginormous
+  - type: Storage
+    maxSlots: 10
+                          #End#    

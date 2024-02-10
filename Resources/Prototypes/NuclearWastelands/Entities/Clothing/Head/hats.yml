@@ -1,0 +1,96 @@
+#Берет "Синего Щита" (Альтернативный)
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretBlueshieldAlt
+  name: Blue Shield beret
+  description: The hallmark of a first-class fighter.
+  suffix: Alt
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Head/Hats/altblueshield_beret.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Head/Hats/altblueshield_beret.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - WhitelistChameleon
+
+#Берет "Синего Щита"
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretBlueshield
+  name: Blue Shield beret
+  description: The hallmark of a first-class fighter.
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Head/Hats/blueshield_beret.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Head/Hats/blueshield_beret.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - WhitelistChameleon
+
+#Берет Бригмеда
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretBrigmed
+  name: brigmedic beret
+  description: Red security beret with silver medical cross.
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Head/Hats/beret_brigmed.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Head/Hats/beret_brigmed.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+
+                        #C-Group#
+#Берет Пилота
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretPilotCGroup
+  name: black beret
+  description: Why is it black?
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Head/Hats/cgpilot_beret.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Head/Hats/cgpilot_beret.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - WhitelistChameleon
+#Берет Командира
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretComCGroup
+  name: C-Group Commander beret
+  description: It hurts some people to look at him.
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Head/Hats/cgcommander_beret.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Head/Hats/cgcommander_beret.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+                        #End#
+
+#фуражка SS
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCapSS
+  name: black cap 
+  description: Wenn Die Soldaten Durch Die Stadt Marschieren...
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Head/Hats/ss_cap.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Head/Hats/ss_cap.rsi

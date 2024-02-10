@@ -1,0 +1,11 @@
+#офицерская форма сс
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtSSOfficer
+  name: officer's uniform with a skirt 
+  description: SS officer's uniform, but with a skirt.
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Uniforms/Jumpskirt/ss.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Uniforms/Jumpskirt/ss.rsi

@@ -1,0 +1,44 @@
+- type: soundCollection
+  id: FelinidScreams
+  files:
+  - /Audio/NuclearWastelands/Voice/Felinid/cat_scream1.ogg
+  - /Audio/NuclearWastelands/Voice/Felinid/cat_scream2.ogg
+  - /Audio/NuclearWastelands/Voice/Felinid/cat_scream3.ogg
+
+- type: soundCollection
+  id: FelinidHisses
+  files:
+  - /Audio/Animals/cat_hiss.ogg   
+  - /Audio/NuclearWastelands/Voice/Felinid/cat_hiss1.ogg
+  - /Audio/NuclearWastelands/Voice/Felinid/cat_hiss2.ogg
+  - /Audio/NuclearWastelands/Voice/Felinid/cat_hiss3.ogg
+
+- type: soundCollection
+  id: FelinidMeows
+  files:
+  - /Audio/Animals/cat_meow.ogg        
+  - /Audio/NuclearWastelands/Voice/Felinid/cat_meow1.ogg
+  - /Audio/NuclearWastelands/Voice/Felinid/cat_meow2.ogg
+  - /Audio/NuclearWastelands/Voice/Felinid/cat_meow3.ogg
+  - /Audio/NuclearWastelands/Voice/Felinid/cat_meow4.ogg
+  - /Audio/NuclearWastelands/Voice/Felinid/cat_meow5.ogg
+  - /Audio/NuclearWastelands/Voice/Felinid/cat_meow6.ogg
+  - /Audio/NuclearWastelands/Voice/Felinid/cat_meow7.ogg
+
+- type: soundCollection
+  id: FelinidMews
+  files:
+  - /Audio/NuclearWastelands/Voice/Felinid/cat_mew1.ogg
+  - /Audio/NuclearWastelands/Voice/Felinid/cat_mew2.ogg
+  - /Audio/NuclearWastelands/Voice/Felinid/cat_mew3.ogg
+
+- type: soundCollection
+  id: FelinidGrowls
+  files:
+  - /Audio/NuclearWastelands/Voice/Felinid/cat_growl1.ogg
+  - /Audio/NuclearWastelands/Voice/Felinid/cat_growl2.ogg
+
+- type: soundCollection
+  id: FelinidPurrs
+  files:
+  - /Audio/NuclearWastelands/Voice/Felinid/cat_purr1.ogg

@@ -43,6 +43,18 @@
 
 - type: entity
   noSpawn: true
+  parent: ClothingBackpackBrigmedic
+  id: ClothingBackpackBrigmedicFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalBrigmedic
+      - id: Flash
+      - id: MagazinePistolRubber
+      - id: Cautery
+
+- type: entity
+  noSpawn: true
   parent: ClothingBackpackMedical
   id: ClothingBackpackMedicalFilled
   components:
@@ -237,6 +249,32 @@
       - id: CigPackBlack
       - id: HandLabeler
       - id: BoxForensicPad
+
+# Deathsquad | Nuclear wastelands
+
+- type: entity
+  noSpawn: true
+  parent: ClothingDeathSquadronBackpack
+  id: ClothingDeathSquadronBackpackFilled
+  name: рюкзак эскадрона смерти
+  description: Вместительный рюкзак с использованием технологии блюспейс.
+  components:
+    - type: Storage
+      grid:
+      - 0,0,8,5    
+    - type: StorageFill
+      contents:
+        - id: BoxSurvival
+        - id: WeaponPulsePistol
+        - id: WeaponPulseRifle
+        - id: WeaponShotgunBulldog
+        - id: MedicatedSuture
+        - id: RegenerativeMesh
+        - id: MagazineShotgun
+        - id: MagazineShotgun
+        - id: WeaponRevolverMateba
+        - id: SpeedLoaderMagnum
+        - id: DeathAcidifierImplanter        
 
 # ERT
 

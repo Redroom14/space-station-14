@@ -1,0 +1,47 @@
+# Для такого оружие нужно размещать спрайты в две папки. 
+# Спрайты иконок условно в папку big.rsi, а спрайты экипировки на уристе в условную папку tine.rsi
+# Примеры:
+#  ____________________________Иконка предмета_____________________________
+# |  - type: Sprite                                                        |
+# |   sprite: NuclearWastelands/Objects/Weapons/Gunsx64/LMGs/dp27/big.rsi  |
+#  ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+#  ______________________Вид в руках/за спиной уриста______________________
+# |  - type: Clothing                                                      |  
+# |    sprite: NuclearWastelands/Objects/Weapons/Gunsx64/LMGs/dp27/tiny.rsi|
+# |  - type: Item                                                          |  
+# |    sprite: NuclearWastelands/Objects/Weapons/Gunsx64/LMGs/dp27/tiny.rsi|         
+# |  - type: MagazineVisuals                                               |
+#  ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+# ДП-27
+- type: entity
+  name: DP-27 R-321
+  id: WeaponLightMachineGunDP27
+  parent: BaseWeaponLightMachineGun
+  suffix: Пулемёт
+  description: A rather traditionally made LMG with a pleasantly lacquered wooden pistol grip. Uses .30 rifle ammo.
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Objects/Weapons/Gunsx64/LMGs/dp27/big.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-3
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: NuclearWastelands/Objects/Weapons/Gunsx64/LMGs/dp27/tiny.rsi
+  - type: Item
+    sprite: NuclearWastelands/Objects/Weapons/Gunsx64/LMGs/dp27/tiny.rsi         
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: true
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineLightRifleMaxim
+        whitelist:
+          tags:
+           - MagazineLightRiflePan

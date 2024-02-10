@@ -1,0 +1,14 @@
+# Синий Щит
+- type: entity
+  parent: PassengerIDCard
+  id: BlueShieldIDCard
+  name: blueshield ID card
+  components:
+  - type: PresetIdCard
+    job: BlueShield
+  - type: Sprite
+    layers:
+    - state: centcom
+    - state: idblueshield
+  - type: Item
+    heldPrefix: blue    

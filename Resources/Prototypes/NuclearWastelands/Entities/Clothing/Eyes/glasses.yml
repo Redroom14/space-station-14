@@ -1,0 +1,49 @@
+# Модифицированные солнцезащитные очки
+- type: entity
+  parent: ClothingEyesGlassesSunglasses
+  id: ClothingEyesGlassesSunglassesModified
+  name: modified sunglasses
+  description: Stylish black sunglasses, but now with huds!
+  components:
+  - type: ShowSecurityIcons
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Eyes/modifiedsunglasses.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Eyes/modifiedsunglasses.rsi
+  
+# Синие солнцезащитные очки
+- type: entity
+  parent: ClothingEyesGlassesSunglasses
+  id: ClothingEyesGlassesSunglassesModifiedBlue
+  name: blue sunglasses
+  description: A blue version of the modified sunglasses style.
+  components:
+  - type: ShowSecurityIcons
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Eyes/bluesunglasses.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Eyes/bluesunglasses.rsi
+
+# Медицинские солнцезащитые очки
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesMed
+  name: medical sunglasses
+  description: They perfectly protect the eyes from flashes, showing all the information about the health of others. A field medic's best friend.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/medglasses.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/medglasses.rsi
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: Tag
+    tags:
+    - WhitelistChameleon     
