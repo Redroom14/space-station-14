@@ -1,0 +1,23 @@
+# Tails
+
+- type: marking
+  id: FoxHumanTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Human]
+  coloring:
+    default:
+      type:
+        !type:CategoryColoring
+        category: Hair
+      fallbackTypes:
+        - !type:CategoryColoring
+          category: FacialHair
+        - !type:SkinColoring
+  sprites:
+    - sprite: NuclearWastelands/Mobs/Customization/fox_tails.rsi
+      state: foxtail1
+    - sprite: NuclearWastelands/Mobs/Customization/fox_tails.rsi
+      state: foxtail2
+    - sprite: NuclearWastelands/Mobs/Customization/fox_tails.rsi
+      state: foxtail3            
