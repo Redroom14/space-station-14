@@ -24,3 +24,40 @@
   - type: Icon
     state: pda-c-group
                           #End#
+
+# Синий Щит
+- type: entity
+  parent: BasePDA
+  id: BlueShieldPDA
+  name: blueshield PDA
+  description: This smells like professionalism.
+  components:
+  - type: Pda
+    id: BlueShieldIDCard
+    state: pda-blueshield
+  - type: PdaBorderColor
+    borderColor: "#1e2149"
+    accentHColor: "#4960b6"    
+    accentVColor: "#4960b6"
+  - type: Icon
+    state: pda-blueshield
+  - type: HealthAnalyzer
+    scanDelay: 2.5
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"   
+  - type: ActivatableUI 
+    key: enum.CrewMonitoringUIKey.Key
+    closeOnHandDeselect: false
+  - type: UserInterface
+    interfaces:
+      - key: enum.CrewMonitoringUIKey.Key
+        type: CrewMonitoringBoundUserInterface        # Мониторинг экипажа будет работать 
+  - type: CrewMonitoringConsole                       # Как обычный портативный мониторинг.
+  - type: DeviceNetwork                               # Так будет до момента, пока я не сделаю
+    deviceNetId: Wireless                             # Отдельный компонент картриджа для этого. 
+    receiveFrequencyId: CrewMonitor                   #
+  - type: WirelessNetworkConnection                   # Из минусов только отсутствие возможности
+    range: 500                                        # Открыть интерфейс КПК.
+  - type: StationLimitedNetwork
+  - type: StaticPrice
+    price: 500                               

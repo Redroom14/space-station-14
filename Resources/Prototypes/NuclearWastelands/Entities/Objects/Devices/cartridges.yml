@@ -1,6 +1,7 @@
 - type: entity
   parent: BaseItem
-  id: CrewMonitoringCartridge
+  id: CrewMonitorCartridge
+  suffix: В РАЗРАБОТКЕ!
   name: crew  cartridge
   description: A program for listing your fellow crewmembers
   components:
@@ -8,9 +9,9 @@
       sprite: Objects/Devices/cartridge.rsi
       state: cart-y
     - type: UIFragment
-      ui: !type:CrewMonitoringUi
+      ui: !type:CrewManifestUi
     - type: Cartridge
-      programName: crew-handheldcrewmonitor-program-name
+      programName: crew-monitor-program-name
       icon:
         sprite: Objects/Specific/Medical/handheldcrewmonitor.rsi
         state: icon

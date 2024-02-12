@@ -183,27 +183,6 @@
 #      capacity: 40
 #      maxSlots: 10
 
-# КПК
-- type: entity
-  parent: BasePDA
-  id: BlueShieldPDA
-  name: КПК синего щита
-  description: Это пахнет профессионализмом.
-  components:
-  - type: Pda
-    id: BlueShieldIDCard
-    state: pda-blueshield
-  - type: PdaBorderColor
-    borderColor: "#1e2149"
-    accentHColor: "#4960b6"    
-    accentVColor: "#4960b6"
-  - type: Icon
-    state: pda-blueshield
-  - type: HealthAnalyzer
-    scanDelay: 2.5
-    scanningEndSound:
-      path: "/Audio/Items/Medical/healthscanner.ogg"  
-
 # Маркер спавна
 - type: entity
   id: SpawnPointBlueShield
