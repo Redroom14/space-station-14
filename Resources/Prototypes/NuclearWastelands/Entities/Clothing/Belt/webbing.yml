@@ -7,9 +7,9 @@
 #РПС Наёмника                                     
 - type: entity
   parent: ClothingBeltStorageBase
-  id: ClothingBeltMilitaryWebbingCGmerc
-  name: C-Group mercenary webbing
-  description: Tactical webbing used by C-Group mercenaries.
+  id: ClothingBeltMilitaryWebbingCG
+  name: C-Group webbing
+  description: Tactical webbing used by C-Group Operatives.
   components:
   - type: Sprite
     sprite: NuclearWastelands/Clothing/Belt/cgmerc_webbing.rsi
