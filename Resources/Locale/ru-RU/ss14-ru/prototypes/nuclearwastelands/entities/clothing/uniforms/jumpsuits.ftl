@@ -1,6 +1,6 @@
 ent-ClothingUniformJumpsuitSSOfficer = офицерская форма
     .desc = Роскошная чёрная форма сшитая компанией "Hugo Boss" специально для элитных офицеров.
-ent-ClothingUniformJumpsuitCGroupMerc = серый комбинезон наёмника C-Group
+ent-ClothingUniformJumpsuitCGroup = серый комбинезон офицера C-Group
     .desc = Он серый. Прям как... Серость.
 ent-ClothingUniformJumpsuitPilotCGroup = комбинезон пилота C-Group
     .desc = Он чёрный. Почему? Вопросы к НИО C-Group.   

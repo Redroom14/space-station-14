@@ -6,8 +6,8 @@
   parent: ClothingOuterHardsuitSecurity
   id: ClothingOuterHardsuitPilotCGroup
   name: C-Group pilot hardsuit
-  description: Filled
-  suffix: В РАЗРАБОТКЕ!
+  description: A lightweight hardsuit based on an exosuit, redesigned for use in combat conditions. By the standards of C-Group, it’s about 300 years out of date. At first glance, it resembles Gorlax’s marauders
+  suffix: ТЕСТОВЫЙ ОБРАЗЕЦ!
   components:
   - type: Sprite
     sprite: NuclearWastelands/Clothing/OuterClothing/Hardsuits/cgpilot.rsi
@@ -17,18 +17,18 @@
     highPressureMultiplier: 0.45
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
-    damageCoefficient: 0.6
+    damageCoefficient: 0.3
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.6
-        Slash: 0.5
-        Piercing: 0.5
-        Radiation: 0.5
-        Caustic: 0.6
+        Blunt: 0.2
+        Slash: 0.4
+        Piercing: 0.4
+        Radiation: 0.0
+        Caustic: 0.4
   - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
+    walkModifier: 1.0
+    sprintModifier: 1.20
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitPilotCGroup
 #                    End

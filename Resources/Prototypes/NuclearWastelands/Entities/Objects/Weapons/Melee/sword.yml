@@ -1,0 +1,149 @@
+#Содержит Кастомное оружие ближнего боя. Прошу обозначйте организацию
+
+#ОБК
+- type: entity
+  name: Ямато
+  parent: BaseItem
+  id: Yamato
+  description: Реликвия Ордена "Боевых Кабанов", I need more POWER
+  components:
+  - type: Sharp
+  - type: Sprite
+    sprite: NuclearWastelands/Objects/Weapons/Melee/yamato.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 2.5
+    damage:
+      types:
+        Slash: 25 
+        Heat: 10
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+  - type: Reflect
+    enabled: true
+    reflectProb: .90
+    spread: 180
+  - type: Item
+    size: Normal
+    sprite: NuclearWastelands/Weapons/Melee/yamato.rsi
+  - type: HandTeleporter
+
+#C-Group
+- type: entity
+  name: Боевой Клинок "Огненный Шторм"
+  parent: BaseItem
+  id: battelbladefirestorm
+  description: Кажется... оно хочет крови ксеносов...
+  components:
+  - type: Sharp
+  - type: Sprite
+    sprite: NuclearWastelands/Objects/Weapons/Melee/battelblade_firestorm.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 2.0
+    damage:
+      types:
+        Slash: 10
+        Heat: 12.5
+        Blunt: 12.5
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+  - type: Reflect
+    enabled: true
+    reflectProb: .95
+    spread: 180
+
+#ОБК
+- type: entity
+  name: Цепной Меч "Ордена Боевых Кабанов"
+  parent: BaseItem
+  id: Chainsword
+  description: Цепной меч является предпочтительным оружием ближнего боя многих вооруженных сил Империума Человека.
+  components:
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/NuclearWastelands/Weapons/Melee/Chainsword/chainsword_loop.ogg
+      params:
+        volume: 1
+  - type: UseDelay
+    delay: 5
+  - type: Sprite
+    sprite: NuclearWastelands/Objects/Weapons/Melee/chainsword.rsi
+    layers:
+    - state: icon
+    - state: base_on
+      visible: false
+      shader: unshaded
+      map: ["enum.ToggleVisuals.Layer"]
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: { visible: true }
+          False: { visible: false }
+  - type: ItemToggle
+    predictable: false
+    soundActivate:
+      path: /Audio/NuclearWastelands/Weapons/Melee/Chainsword/ChainSword-on.ogg
+      params:
+        volume: 6
+    soundDeactivate:
+      path: /Audio/NuclearWastelands/Weapons/Melee/Chainsword/ChainSword-off.ogg
+      params:
+        volume: 6
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnHit:
+      path: /Audio/NuclearWastelands/Weapons/Melee/Chainsword/chainsword_hit.ogg
+      params:
+        variation: 0.250
+    activatedSoundOnHitNoDamage:
+      path: /Audio/NuclearWastelands/Weapons/Melee/Chainsword/chainsword_hit.ogg
+      params:
+        variation: 0.250
+        volume: -12
+    activatedDamage:
+      types:
+        Piercing: 10
+        Slash: 20
+        Blunt: 15
+    deactivatedDamage:
+      types:
+        Piercing: 5
+        Blunt: 10
+  - type: ItemToggleDisarmMalus
+    activatedDisarmMalus: 0.6
+  - type: Item
+    size: Huge
+    sprite: NuclearWastelands/Objects/Weapons/Melee/chainsword.rsi
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - Belt
+  - type: ToggleableLightVisuals
+    spriteLayer: on
+    inhandVisuals:
+      left:
+      - state: inhand-left-on
+      right:
+      - state: inhand-right-on
+  - type: Welder
+    FuelLitCost: 2
+  - type: RefillableSolution
+    solution: Welder
+  - type: SolutionContainerManager
+    solutions:
+      Welder:
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 250
+        maxVol: 250
+  - type: MeleeWeapon
+    wideAnimationRotation: -120
+    soundHit:
+        path: /Audio/NuclearWastelands/Weapons/Melee/Chainsword/chainsword_hit.ogg
+    damage:
+      types:
+        Blunt: 10 #i mean... i GUESS you could use it like that
+  - type: Appearance

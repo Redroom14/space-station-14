@@ -15,7 +15,6 @@
     stampedColor: "#000000"
     stampState: "paper_stamp-trader"
   - type: Sprite
-    sprite: Objects/Misc/bureaucracy.rsi
     state: stamp-trader
 
 #C-Group
@@ -30,5 +29,4 @@
     stampedColor: "#3681bb"
     stampState: "paper_stamp-cap"
   - type: Sprite
-    sprite: Objects/Misc/bureaucracy.rsi
     state: stamp-cap

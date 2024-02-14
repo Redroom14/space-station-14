@@ -12,11 +12,11 @@
 
 
                           #C-Group#
-# Комбинезон Наёмника                          
+# Комбинезон Офицера                          
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitCGroupMerc
-  name: grey C-Group mercenary jumpsuit
+  id: ClothingUniformJumpsuitCGroup
+  name: grey C-Group Officer jumpsuit
   description: It's grey. Just like that... Grayness.
   components:
   - type: Sprite

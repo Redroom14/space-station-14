@@ -7,10 +7,13 @@
   description: Black and Red. It smells like fresh blood.
   components:
   - type: Pda
-    id: CBURNIDcard
+    id: CentcomIDCardDeathsquad
     state: pda-pilot
   - type: Icon
     state: pda-pilot
+  - type: HealthAnalyzer
+    scanDelay: 2.5
+    
 #просто КПК C-Group
 - type: entity
   parent: BasePDA
@@ -23,6 +26,8 @@
     state: pda-c-group
   - type: Icon
     state: pda-c-group
+  - type: HealthAnalyzer
+    scanDelay: 2.5
                           #End#
 
 # Синий Щит

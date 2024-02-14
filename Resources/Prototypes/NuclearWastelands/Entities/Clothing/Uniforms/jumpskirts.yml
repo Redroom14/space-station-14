@@ -9,3 +9,27 @@
     sprite: NuclearWastelands/Clothing/Uniforms/Jumpskirt/ss.rsi
   - type: Clothing
     sprite: NuclearWastelands/Clothing/Uniforms/Jumpskirt/ss.rsi
+
+#Офицера CG
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtCGroup
+  name: Grey Officer's Jumpsuit Skirt C-Group
+  description: It's grey.Now with a skirt, by special order.
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Uniforms/Jumpskirt/c-group.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Uniforms/Jumpskirt/c-group.rsi
+
+#Пилот CG
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtPilotCGroup
+  name: Pilot's Jumpsuit Skirt C-Group
+  description: He's black. Now with a skirt, why?
+  components:
+  - type: Sprite
+    sprite: NuclearWastelands/Clothing/Uniforms/Jumpskirt/pilot.rsi
+  - type: Clothing
+    sprite: NuclearWastelands/Clothing/Uniforms/Jumpskirt/pilot.rsi
