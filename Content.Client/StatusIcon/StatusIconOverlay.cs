@@ -3,9 +3,8 @@ using Content.Shared.StatusIcon.Components;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Shared.Enums;
-using Robust.Shared.Prototypes;
-using Robust.Shared.Timing;
 using System.Numerics;
+using Robust.Shared.Prototypes;
 
 namespace Content.Client.StatusIcon;
 
@@ -13,12 +12,11 @@ public sealed class StatusIconOverlay : Overlay
 {
     [Dependency] private readonly IEntityManager _entity = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
 
     private readonly SpriteSystem _sprite;
     private readonly TransformSystem _transform;
     private readonly StatusIconSystem _statusIcon;
-    private readonly ShaderInstance _unshadedShader;
+    private readonly ShaderInstance _shader;
 
     public override OverlaySpace Space => OverlaySpace.WorldSpaceBelowFOV;
 
@@ -29,7 +27,7 @@ public sealed class StatusIconOverlay : Overlay
         _sprite = _entity.System<SpriteSystem>();
         _transform = _entity.System<TransformSystem>();
         _statusIcon = _entity.System<StatusIconSystem>();
-        _unshadedShader = _prototype.Index<ShaderPrototype>("unshaded").Instance();
+        _shader = _prototype.Index<ShaderPrototype>("unshaded").Instance();
     }
 
     protected override void Draw(in OverlayDrawArgs args)
@@ -41,6 +39,8 @@ public sealed class StatusIconOverlay : Overlay
         var xformQuery = _entity.GetEntityQuery<TransformComponent>();
         var scaleMatrix = Matrix3.CreateScale(new Vector2(1, 1));
         var rotationMatrix = Matrix3.CreateRotation(-eyeRot);
+
+        handle.UseShader(_shader);
 
         var query = _entity.AllEntityQueryEnumerator<StatusIconComponent, SpriteComponent, TransformComponent, MetaDataComponent>();
         while (query.MoveNext(out var uid, out var comp, out var sprite, out var xform, out var meta))
@@ -72,9 +72,7 @@ public sealed class StatusIconOverlay : Overlay
 
             foreach (var proto in icons)
             {
-
-                var curTime = _timing.RealTime;
-                var texture = _sprite.GetFrame(proto.Icon, curTime);
+                var texture = _sprite.Frame0(proto.Icon);
 
                 float yOffset;
                 float xOffset;
@@ -86,33 +84,22 @@ public sealed class StatusIconOverlay : Overlay
                 {
                     if (accOffsetL + texture.Height > sprite.Bounds.Height * EyeManager.PixelsPerMeter)
                         break;
-                    if (proto.Layer == StatusIconLayer.Base)
-                    {
-                        accOffsetL += texture.Height;
-                        countL++;
-                    }
-                    yOffset = (bounds.Height + sprite.Offset.Y) / 2f - (float) (accOffsetL - proto.Offset) / EyeManager.PixelsPerMeter;
+                    accOffsetL += texture.Height;
+                    yOffset = (bounds.Height + sprite.Offset.Y) / 2f - (float) accOffsetL / EyeManager.PixelsPerMeter;
                     xOffset = -(bounds.Width + sprite.Offset.X) / 2f;
 
+                    countL++;
                 }
                 else
                 {
                     if (accOffsetR + texture.Height > sprite.Bounds.Height * EyeManager.PixelsPerMeter)
                         break;
-                    if (proto.Layer == StatusIconLayer.Base)
-                    {
-                        accOffsetR += texture.Height;
-                        countR++;
-                    }
-                    yOffset = (bounds.Height + sprite.Offset.Y) / 2f - (float) (accOffsetR - proto.Offset) / EyeManager.PixelsPerMeter;
+                    accOffsetR += texture.Height;
+                    yOffset = (bounds.Height + sprite.Offset.Y) / 2f - (float) accOffsetR / EyeManager.PixelsPerMeter;
                     xOffset = (bounds.Width + sprite.Offset.X) / 2f - (float) texture.Width / EyeManager.PixelsPerMeter;
 
+                    countR++;
                 }
-
-                if (proto.IsShaded)
-                    handle.UseShader(null);
-                else
-                    handle.UseShader(_unshadedShader);
 
                 var position = new Vector2(xOffset, yOffset);
                 handle.DrawTexture(texture, position);
