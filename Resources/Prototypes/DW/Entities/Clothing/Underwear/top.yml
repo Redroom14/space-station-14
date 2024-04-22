@@ -41,7 +41,7 @@
 
 - type: entity
   parent: ClothingUnderwearTopBase
-  id: ClothingUnderwearTopBraSportsWhite
+  id: ClothingUnderwearTopBraSports
   name: sports bra
   description: Sports bra. Painted white.
   components:
@@ -50,7 +50,7 @@
 
 - type: entity
   parent: ClothingUnderwearTopBase
-  id: ClothingUnderwearTopBraSportsAlternativeWhite
+  id: ClothingUnderwearTopBraSportsAlternative
   name: alternative sports bra
   description: Sports bra. Alternate version. Painted white.
   components:
