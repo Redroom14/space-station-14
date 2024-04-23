@@ -341,7 +341,6 @@
       visible: false
     - map: ["underwearb"] #Sirena
     - map: ["underweart"] #Sirena     
-    - map: ["jumpsuit"]
     - map: ["enum.HumanoidVisualLayers.LFoot"]
     - map: ["enum.HumanoidVisualLayers.RFoot"]
     - map: ["socks"] #Sirena          
