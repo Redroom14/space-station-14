@@ -18,6 +18,7 @@
       - id: ClothingHeadsetAltCargo
       - id: BoxEncryptionKeyCargo
       - id: PrinterDocFlatpack # Corvax-Printer
+      - id: ADTUnderwearBoxQM # Sirena-Underwear | ADT-UnderwearBox
 
 - type: entity
   id: LockerCaptainFilledHardsuit
@@ -46,6 +47,7 @@
       - id: WeaponAntiqueLaser
       - id: JetpackCaptainFilled
       - id: MedalCase
+      - id: ADTUnderwearBoxCap # Sirena-Underwear | ADT-UnderwearBox
 
 - type: entity
   id: LockerCaptainFilled
@@ -76,6 +78,7 @@
       - id: ClothingHeadCaptainHat
       - id: ClothingOuterCoatCaptain
       # Corvax-Resprite-End
+      - id: ADTUnderwearBoxCap # Sirena-Underwear | ADT-UnderwearBox      
 
 - type: entity
   id: LockerCaptainFilledNoLaser
@@ -101,6 +104,7 @@
       - id: RubberStampCaptain
       - id: JetpackCaptainFilled
       - id: MedalCase
+      - id: ADTUnderwearBoxCap # Sirena-Underwear | ADT-UnderwearBox      
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
@@ -130,6 +134,7 @@
       - id: ClothingOuterCoatHOP # Corvax-Resprite
       - id: AccessConfigurator
       - id: PrinterDocFlatpack # Corvax-Printer
+      - id: ADTUnderwearBoxHOP # Sirena-Underwear | ADT-UnderwearBox 
 
 - type: entity
   id: LockerChiefEngineerFilledHardsuit
@@ -154,6 +159,7 @@
       - id: AccessConfigurator
       - id: RCD
       - id: RCDAmmo
+      - id: ADTUnderwearBoxCE # Sirena-Underwear | ADT-UnderwearBox 
 
 - type: entity
   id: LockerChiefEngineerFilled
@@ -174,6 +180,7 @@
       - id: AccessConfigurator
       - id: RCD
       - id: RCDAmmo
+      - id: ADTUnderwearBoxCE # Sirena-Underwear | ADT-UnderwearBox       
 
 - type: entity
   id: LockerChiefMedicalOfficerFilledHardsuit
@@ -197,6 +204,7 @@
       - id: RubberStampCMO
       - id: MedicalTechFabCircuitboard
       - id: BoxEncryptionKeyMedical
+      - id: ADTUnderwearBoxCMO # Sirena-Underwear | ADT-UnderwearBox
 
 - type: entity
   id: LockerChiefMedicalOfficerFilled
@@ -217,6 +225,7 @@
       - id: RubberStampCMO
       - id: MedicalTechFabCircuitboard
       - id: BoxEncryptionKeyMedical
+      - id: ADTUnderwearBoxCMO # Sirena-Underwear | ADT-UnderwearBox      
 
 - type: entity
   id: LockerResearchDirectorFilledHardsuit
@@ -236,6 +245,7 @@
       - id: BoxEncryptionKeyScience
       - id: ClothingHeadsetAltScience
       - id: EncryptionKeyBinary
+      - id: ADTUnderwearBoxRD # Sirena-Underwear | ADT-UnderwearBox  
 
 - type: entity
   id: LockerResearchDirectorFilled
@@ -254,6 +264,7 @@
       - id: BoxEncryptionKeyScience
       - id: ClothingHeadsetAltScience
       - id: EncryptionKeyBinary
+      - id: ADTUnderwearBoxRD # Sirena-Underwear | ADT-UnderwearBox        
 
 - type: entity
   id: LockerHeadOfSecurityFilledHardsuit
@@ -288,6 +299,7 @@
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
       - id: BookBusido # Corvax-Books
+      - id: ADTUnderwearBoxHOS # Sirena-Underwear | ADT-UnderwearBox   
 
 - type: entity
   id: LockerHeadOfSecurityFilled
@@ -314,6 +326,7 @@
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: ADTUnderwearBoxHOS # Sirena-Underwear | ADT-UnderwearBox         
 
 - type: entity
   id: LockerFreezerVaultFilled
