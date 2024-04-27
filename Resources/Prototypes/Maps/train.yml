@@ -50,6 +50,7 @@
             Warden: [ 1, 1 ]
             SecurityOfficer: [ 4, 4 ]
             SecurityCadet: [ 2, 3 ]
+            Brigmedic: [ 1, 1 ]
             #Lawyer: [ 1, 2 ] # Corvax-IAA
             #supply
             Quartermaster: [ 1, 1 ]

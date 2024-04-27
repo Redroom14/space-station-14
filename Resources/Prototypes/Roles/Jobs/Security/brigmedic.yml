@@ -1,0 +1,52 @@
+- type: job
+  id: Brigmedic              #Workbench-Team rework
+  name: job-name-brigmedic
+  description: job-description-brigmedic
+  playTimeTracker: JobBrigmedic
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobMedicalDoctor
+      time: 18000 #5 hrs    
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 25200 #7 hrs
+    - !type:OverallPlaytimeRequirement
+      time: 10080 # Dream of Warrior // 3 часа.      
+  startingGear: BrigmedicGear
+  icon: "JobIconBrigmedic"
+  supervisors: job-supervisors-hos
+  canBeAntag: false
+  access:
+  - Security
+  - Brig
+  - Maintenance
+  - Service
+  - External
+  - Medical  
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+
+- type: startingGear
+  id: BrigmedicGear
+  equipment:
+    jumpsuit: DWClothingUniformJumpsuitBrigmedicTurtle
+    outerClothing: DWClothingOuterCoatBrigmedicWB
+    back: DWClothingBackpackBrigmedicFilled
+    shoes: ClothingShoesBootsJackSec
+    gloves: ClothingHandsGlovesLatex
+    eyes: DWClothingEyesGlassesMed
+    head: DWClothingHeadHatBeretBrigmedic
+    id: BrigmedicPDA
+    ears: ClothingHeadsetBrigmedic
+    belt: ClothingBeltMedicalFilled
+    pocket1: WeaponPistolMk58Nonlethal
+#    pocket2: TelescopicBaton
+#    underwearb: ClothingUnderwearBottomBoxersWhite
+#    socks: ClothingUnderwearSocksNormal
+#  underwearb: ClothingUnderwearBottomPantiesWhite
+#  underweart: ClothingUnderwearTopBraSportsWhite  
+  innerClothingSkirt: DWClothingUniformJumpskirtBrigmedicTurtle
+  satchel: DWClothingBackpackSatchelBrigmedicFilled
+  duffelbag: DWClothingBackpackDuffelBrigmedicFilled
+

@@ -617,6 +617,20 @@
     Cloth: 300
 
 - type: latheRecipe
+  id: DWClothingUniformJumpsuitBrigmedicTurtle
+  result: DWClothingUniformJumpsuitBrigmedicTurtle
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: DWClothingUniformJumpskirtBrigmedicTurtle
+  result: DWClothingUniformJumpskirtBrigmedicTurtle
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
   id: ClothingUniformJumpsuitSyndieFormal
   result: ClothingUniformJumpsuitSyndieFormal
   completetime: 4
@@ -909,6 +923,14 @@
     Durathread: 450
 
 - type: latheRecipe
+  id: DWClothingOuterWinterBrig
+  result: DWClothingOuterWinterBrig
+  completetime: 3.2
+  materials:
+    Cloth: 500
+    Durathread: 450
+
+- type: latheRecipe
   id: ClothingOuterWinterChem
   result: ClothingOuterWinterChem
   completetime: 3.2
@@ -1078,6 +1100,20 @@
 - type: latheRecipe
   id: ClothingHeadHatBeretBrigmedic
   result: ClothingHeadHatBeretBrigmedic
+  completetime: 2
+  materials:
+    Cloth: 100
+
+- type: latheRecipe
+  id: ClothingHeadHatBeretSecurityMedic
+  result: ClothingHeadHatBeretSecurityMedic
+  completetime: 2
+  materials:
+    Cloth: 100
+
+- type: latheRecipe
+  id: DWClothingHeadHatBeretBrigmedic
+  result: DWClothingHeadHatBeretBrigmedic
   completetime: 2
   materials:
     Cloth: 100

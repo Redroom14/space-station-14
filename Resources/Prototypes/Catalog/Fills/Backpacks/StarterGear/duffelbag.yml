@@ -30,6 +30,18 @@
 
 - type: entity
   noSpawn: true
+  parent: ClothingBackpackDuffelBrigmedic
+  id: DWClothingBackpackDuffelBrigmedicFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: DWBoxSurvivalBrigmedic      
+      - id: Flash
+      - id: MagazinePistolRubber
+      - id: Cautery
+
+- type: entity
+  noSpawn: true
   parent: ClothingBackpackDuffelSecurity
   id: ClothingBackpackDuffelSecurityFilledDetective
   components:

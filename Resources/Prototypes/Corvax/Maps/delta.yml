@@ -34,6 +34,7 @@
             StationEngineer: [ 5, 5 ]
             ChiefMedicalOfficer: [ 1, 1 ]
             MedicalDoctor: [ 5, 5 ]
+            Brigmedic: [ 1, 1 ]
             Chemist: [ 2, 2 ]
             ResearchDirector: [ 1, 1 ]
             Scientist: [ 6, 6 ]

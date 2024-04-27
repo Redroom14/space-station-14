@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingHeadHatHoodWinterBase
+  id: DWClothingHeadHatHoodWinterBrig
+  noSpawn: true
+  name: brigmedic coat hood
+  components:
+  - type: Sprite
+    sprite: DW/Clothing/Head/Hoods/Coat/hoodbrig.rsi
+  - type: Clothing
+    sprite: DW/Clothing/Head/Hoods/Coat/hoodbrig.rsi
