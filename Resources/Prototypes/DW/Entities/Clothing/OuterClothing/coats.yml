@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: DWClothingOuterCoatBrigmedicWB
+  name: brigmedic windbreaker
+  description: A brigmedic's trusty windbreaker, for all the space wind.
+  components:
+  - type: Sprite
+    sprite: DW/Clothing/OuterClothing/Coats/windbreaker_brigmedic.rsi
+  - type: Clothing
+    sprite: DW/Clothing/OuterClothing/Coats/windbreaker_brigmedic.rsi     

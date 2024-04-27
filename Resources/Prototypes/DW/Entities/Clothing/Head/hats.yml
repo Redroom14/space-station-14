@@ -1,0 +1,14 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: DWClothingHeadHatBeretBrigmedic
+  name: brigmedic beret
+  description: Red security beret with silver medical cross.
+  components:
+  - type: Sprite
+    sprite: DW/Clothing/Head/Hats/beret_brigmedic.rsi
+  - type: Clothing
+    sprite: DW/Clothing/Head/Hats/beret_brigmedic.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable

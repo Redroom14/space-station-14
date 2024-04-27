@@ -72,22 +72,23 @@
         prob: 0.6
 
 - type: entity
-  id: LockerBrigmedicFilled
-  suffix: Brigmedic, Filled
+  id: LockerBrigmedicFilledOld
+  suffix: Filled, Hardsuit, Old
   parent: LockerBrigmedic
   components:
   - type: StorageFill
     contents:
-      - id: ClothingEyesGlassesSecurity
-      - id: WeaponDisabler
       - id: TrackingImplanter
-        amount: 2
+        amount: 3
       - id: ClothingOuterHardsuitBrigmedic
       - id: BoxSterileMask
-      - id: ClothingHeadHatBeretBrigmedic
+      - id: DWClothingHeadHatBeretBrigmedic
       - id: ClothingOuterCoatAMG
+      - id: ClothingHandsGlovesNitrile
+      - id: ClothingEyesHudMedSec            
       - id: ClothingUniformJumpsuitBrigmedic
       - id: ClothingUniformJumpskirtBrigmedic
+      - id: DWClothingOuterCoatBrigmedicWB      
       - id: ClothingUniformJumpskirtOfLife
         prob: 0.1
       - id: MedkitFilled
@@ -103,13 +104,97 @@
         prob: 0.3
       - id: MedkitBurnFilled
         prob: 0.7
-      - id: ClothingNeckCloakMoth #bzzz Moth-pocalypse
-        prob: 0.15
-      - id: ClothingHeadHelmetSecurityMedic # Corvax-Resprite
-      - id: ClothingOuterVestSecurityMedic # Corvax-Resprite
-        prob: 0.5
-      - id: ClothingOuterCoatLabSecurityMedic # Corvax-Resprite
-        prob: 0.5
+      - id: BoxSyringe
+      - id: BoxBodyBag
+      - id: EpinephrineChemistryBottle
+        amount: 1        
+
+- type: entity
+  id: LockerBrigmedicFilled
+  suffix: Filled
+  parent: LockerBrigmedic
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingEyesHudMedSec
+      - id: TrackingImplanter
+        amount: 3
+      - id: DWClothingHeadHatBeretBrigmedic
+        prob: 0.8      
+      - id: ClothingHeadHatBeretBrigmedic
+        prob: 0.05
+      - id: ClothingHeadHatBeretSecurityMedic
+        prob: 0.1         
+      - id: ClothingHandsGlovesNitrile
+      - id: ClothingOuterCoatAMG
+      - id: ClothingUniformJumpsuitBrigmedic
+      - id: ClothingUniformJumpskirtBrigmedic
+      - id: DWClothingOuterWinterBrig
+        prob: 0.2
+      - id: DWClothingOuterCoatBrigmedicWB
+      - id: BoxSterileMask      
+      - id: MedkitCombatFilled
+        prob: 0.3      
+      - id: MedkitAdvancedFilled
+        prob: 0.4      
+      - id: MedkitFilled
+      - id: MedkitOxygenFilled
+        prob: 0.3
+      - id: MedkitBruteFilled
+        prob: 0.3
+      - id: MedkitToxinFilled
+        prob: 0.3
+      - id: MedkitBurnFilled
+        prob: 0.7             
+      - id: BoxSyringe
+      - id: BoxPillCanister
+      - id: BoxBodyBag
+      - id: EpinephrineChemistryBottle
+        amount: 1
+
+- type: entity
+  id: LockerBrigmedicFilledHardsuit
+  suffix: Hardsuit, Filled
+  parent: LockerBrigmedic
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingEyesHudMedSec
+      - id: TrackingImplanter
+        amount: 3
+      - id: ClothingOuterHardsuitBrigmedic
+      - id: DWClothingHeadHatBeretBrigmedic
+        prob: 0.8    
+      - id: ClothingHeadHatBeretBrigmedic
+        prob: 0.05     
+      - id: ClothingHeadHatBeretSecurityMedic
+        prob: 0.1           
+      - id: ClothingHandsGlovesNitrile
+      - id: ClothingOuterCoatAMG
+      - id: ClothingUniformJumpsuitBrigmedic
+      - id: ClothingUniformJumpskirtBrigmedic
+      - id: DWClothingOuterCoatBrigmedicWB
+      - id: DWClothingOuterWinterBrig
+        prob: 0.2      
+      - id: BoxSterileMask      
+      - id: MedkitCombatFilled
+        prob: 0.3      
+      - id: MedkitAdvancedFilled
+        prob: 0.4      
+      - id: MedkitFilled
+      - id: MedkitOxygenFilled
+        prob: 0.3
+      - id: MedkitBruteFilled
+        prob: 0.3
+      - id: MedkitToxinFilled
+        prob: 0.3
+      - id: MedkitBurnFilled
+        prob: 0.7             
+      - id: BoxSyringe
+      - id: BoxPillCanister
+      - id: BoxBodyBag
+      - id: EpinephrineChemistryBottle
+        amount: 1  
 
 - type: entity
   id: LockerDetectiveFilled

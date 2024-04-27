@@ -943,9 +943,13 @@
       - ClothingHeadHatBeretSecurity
       - ClothingUniformJumpsuitSec
       - ClothingUniformJumpskirtSec
+      - ClothingHeadHatBeretSecurityMedic
+      - DWClothingHeadHatBeretBrigmedic
       - ClothingHeadHatBeretBrigmedic
       - ClothingUniformJumpsuitBrigmedic
       - ClothingUniformJumpskirtBrigmedic
+      - DWClothingUniformJumpsuitBrigmedicTurtle
+      - DWClothingUniformJumpskirtBrigmedicTurtle
       - ClothingHeadHatBeretWarden
       - ClothingHeadHatWarden
       - ClothingUniformJumpsuitWarden
@@ -981,6 +985,7 @@
       - ClothingOuterWinterMiner
       - ClothingOuterWinterMed
       - ClothingOuterWinterPara
+      - DWClothingOuterWinterBrig
       - ClothingOuterWinterChem
       - ClothingOuterWinterGen
       - ClothingOuterWinterViro

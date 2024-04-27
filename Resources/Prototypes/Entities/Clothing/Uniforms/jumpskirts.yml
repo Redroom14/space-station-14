@@ -251,6 +251,7 @@
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/paramedic.rsi
 
+# Brigmedic rework start
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtBrigmedic
@@ -258,9 +259,21 @@
   description: This uniform is issued to qualified personnel who have been trained. No one cares that the training took half a day.
   components:
   - type: Sprite
+    sprite: DW/Clothing/Uniforms/Jumpskirt/brigmedic.rsi
+  - type: Clothing
+    sprite: DW/Clothing/Uniforms/Jumpskirt/brigmedic.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: DWClothingUniformJumpskirtBrigmedicTurtle
+  name: brigmedic turtleneck
+  description: Comfortable and warm turtleneck. Especially for the guardian angel.
+  components:
+  - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirt/brigmedic.rsi
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpskirt/brigmedic.rsi
+    sprite: Clothing/Uniforms/Jumpskirt/brigmedic.rsi      
+# Brigmedic rework end
 
 - type: entity
   parent: ClothingUniformSkirtBase

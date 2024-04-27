@@ -9,8 +9,9 @@
       - id: ClothingMaskBreath
       - id: EmergencyOxygenTankFilled
       - id: EmergencyMedipen
+      - id: SpaceMedipen
       - id: Flare
-      - id: FoodSnackNutribrick
+      - id: FoodTinMRE
       - id: DrinkWaterBottleFull
   - type: Sprite
     layers:
@@ -28,8 +29,9 @@
       - id: ClothingMaskBreath
       - id: ExtendedEmergencyOxygenTankFilled
       - id: EmergencyMedipen
+      - id: SpaceMedipen      
       - id: Flare
-      - id: FoodSnackNutribrick
+      - id: FoodTinMRE
       - id: DrinkWaterBottleFull
   - type: Sprite
     layers:
@@ -48,8 +50,9 @@
       - id: ClothingMaskGasSecurity
       - id: EmergencyOxygenTankFilled
       - id: EmergencyMedipen
+      - id: SpaceMedipen        
       - id: Flare
-      - id: FoodSnackNutribrick
+      - id: FoodTinMRE
       - id: DrinkWaterBottleFull
   - type: Sprite
     layers:
@@ -68,8 +71,9 @@
       - id: ClothingMaskBreathMedical
       - id: EmergencyOxygenTankFilled
       - id: EmergencyMedipen
+      - id: SpaceMedipen        
       - id: Flare
-      - id: FoodSnackNutribrick
+      - id: FoodTinMRE
       - id: DrinkWaterBottleFull
   - type: Sprite
     layers:
