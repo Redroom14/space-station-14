@@ -4,9 +4,7 @@
   id: DWBoxSurvivalBrigmedic
   description: It's a box with basic internals inside.
   suffix: Brigmedic
-  components:
-  - type: Storage
-    maxTotalWeight: 9    
+  components: 
   - type: StorageFill
     contents:
       - id: DWClothingMedCombatGasMask
