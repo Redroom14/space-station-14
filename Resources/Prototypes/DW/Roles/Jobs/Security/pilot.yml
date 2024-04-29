@@ -24,17 +24,18 @@
 - type: startingGear
   id: PilotGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitSeniorOfficer
+    jumpsuit: DWClothingUniformJumpsuitSecPilot
     back: ClothingBackpackSecurityFilled
     shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesGlassesSecurity
-    head: ClothingHeadHatBeretSecurity
-    outerClothing: ClothingOuterVestArmorSec
+    gloves: ClothingHandsGlovesCombat
+    head: DWClothingHeadHatBeretPilot
+    outerClothing: ClothingOuterArmorBasic
     id: PilotPDA
     ears: ClothingHeadsetSecurity
     neck: ClothingNeckTieRed
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponPistolMk58Nonlethal
-  innerClothingSkirt: ClothingUniformJumpskirtSeniorOfficer
+  innerClothingSkirt: DWClothingUniformJumpskirtSecPilot
   satchel: ClothingBackpackSatchelSecurityFilled
   duffelbag: ClothingBackpackDuffelSecurityFilled

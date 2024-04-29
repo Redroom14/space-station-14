@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: DWClothingUniformJumpskirtSecPilot
+  name: security pilot jumpskirt
+  description: A jumpskirt made of strong material for security pilot. It is well suited for those who like to wipe their pants while sitting in one place.
+  components:
+  - type: Sprite
+    sprite: DW/Clothing/Uniforms/Jumpskirt/pilotofficer.rsi
+  - type: Clothing
+    sprite: DW/Clothing/Uniforms/Jumpskirt/pilotofficer.rsi

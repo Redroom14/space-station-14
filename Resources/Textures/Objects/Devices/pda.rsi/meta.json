@@ -225,6 +225,9 @@
     },
     {
       "name": "pda-seniorofficer"
-    }
+    },
+    {
+      "name": "pda-pilotofficer"
+    }    
   ]
 }

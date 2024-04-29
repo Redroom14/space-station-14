@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: DWClothingUniformJumpsuitSecPilot
+  name: security pilot jumpsuit
+  description: A jumpsuit made of strong material for security pilot. It is well suited for those who like to wipe their pants while sitting in one place.
+  components:
+  - type: Sprite
+    sprite: DW/Clothing/Uniforms/Jumpsuit/pilotofficer.rsi
+  - type: Clothing
+    sprite: DW/Clothing/Uniforms/Jumpsuit/pilotofficer.rsi

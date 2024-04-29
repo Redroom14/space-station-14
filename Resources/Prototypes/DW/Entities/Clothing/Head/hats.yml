@@ -12,3 +12,18 @@
     tags:
     - ClothMade
     - HamsterWearable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: DWClothingHeadHatBeretPilot
+  name: security pilot beret
+  description: Red beret of the security pilot. He gets paid for it.
+  components:
+  - type: Sprite
+    sprite: DW/Clothing/Head/Hats/beret_pilotofficer.rsi
+  - type: Clothing
+    sprite: DW/Clothing/Head/Hats/beret_pilotofficer.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
