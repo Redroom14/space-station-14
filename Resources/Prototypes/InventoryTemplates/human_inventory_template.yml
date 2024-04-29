@@ -6,7 +6,7 @@
       slotFlags: FEET
       stripTime: 3
       uiWindowPos: 1,0
-      strippingWindowPos: 2,2
+      strippingWindowPos: 2,1
       displayName: Shoes
     - name: socks
       slotTexture: socks

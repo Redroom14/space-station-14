@@ -227,8 +227,7 @@
       "name": "pda-seniorofficer"
     },
     {
-      "name": "equipped-IDCARD",
-      "directions": 4
-    }
+      "name": "pda-pilotofficer"
+    }    
   ]
 }
