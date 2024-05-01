@@ -298,6 +298,7 @@
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: ADTWeaponPistolX01 #ADTmultiphase
       - id: BookBusido # Corvax-Books
       - id: ADTUnderwearBoxHOS # Sirena-Underwear | ADT-UnderwearBox   
 
@@ -326,6 +327,7 @@
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: ADTWeaponPistolX01 #ADTmultiphase
       - id: ADTUnderwearBoxHOS # Sirena-Underwear | ADT-UnderwearBox         
 
 - type: entity
