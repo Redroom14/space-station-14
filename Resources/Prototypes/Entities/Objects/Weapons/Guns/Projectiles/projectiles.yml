@@ -296,7 +296,6 @@
         Heat: 20
     soundHit:
       path: "/Audio/Weapons/tap.ogg"
-    soundForce: true
 
 - type: entity
   name : disabler bolt practice

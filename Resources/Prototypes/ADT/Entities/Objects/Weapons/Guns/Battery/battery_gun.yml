@@ -21,24 +21,31 @@
   - type: Clothing
     sprite: ADT/Objects/Weapons/Guns/Battery/xyecoc.rsi
   - type: Gun
-    fireRate: 1.5
+    fireRate: 3
+    selectedMode: FullAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisabler
-    fireCost: 60 
+    fireCost: 50
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: BulletDisabler
-      fireCost: 60
+      fireCost: 50
     - proto: BulletTaser
-      fireCost: 148
+      fireCost: 250
     - proto: ADTBulletLaser
-      fireCost: 111
+      fireCost: 50
   - type: Battery
-    maxCharge: 2220
-    startingCharge: 2220
+    maxCharge: 1500
+    startingCharge: 1500
   - type: Tag
     tags:
     - HighRiskItem
+  - type: StaticPrice
     price: 7500
+  - type: Item
+    size: Normal
