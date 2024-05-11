@@ -105,6 +105,18 @@
 
 - type: entity
   parent: Airlock
+  id: DWAirlockBrigMed # DW - Brigmedic Airlocks
+  suffix: Security/Medical
+  components:
+  - type: Sprite
+    sprite: DW/Structures/Doors/Airlocks/Standard/brigmed.rsi
+  - type: PaintableAirlock
+    department: Security
+  - type: Wires
+    layoutId: DWAirlockBrigMed
+
+- type: entity
+  parent: Airlock
   id: AirlockMaint
   name: maintenance access
   components:
@@ -256,6 +268,18 @@
     department: Security
   - type: Wires
     layoutId: AirlockSecurity
+
+- type: entity
+  parent: AirlockGlass
+  id: DWAirlockBrigMedGlass # DW - Brigmedic Airlocks
+  suffix: Security/Medical
+  components:
+  - type: Sprite
+    sprite: DW/Structures/Doors/Airlocks/Glass/brigmed.rsi
+  - type: PaintableAirlock
+    department: Security
+  - type: Wires
+    layoutId: DWAirlockBrigMed   
 
 - type: entity
   parent: AirlockSecurityGlass # see standard
