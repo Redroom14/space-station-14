@@ -1,4 +1,4 @@
-admin-ui-panic-bunker-window-title = Panic Bunker
+admin-ui-panic-bunker-window-title = Панический Бункер
 admin-ui-panic-bunker-enabled = Panic Bunker Enabled
 admin-ui-panic-bunker-disabled = Panic Bunker Disabled
 admin-ui-panic-bunker-tooltip = The panic bunker restricts players from joining if their account is too new or they do not have enough overall playtime on this server.

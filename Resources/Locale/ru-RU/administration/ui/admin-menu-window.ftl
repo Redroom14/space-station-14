@@ -1,6 +1,6 @@
 ## AdminMenuWindow.xaml.cs
 
-admin-menu-title = Меню администратора
+admin-menu-title = Меню Лорда
 admin-menu-admin-tab = Администратор
 admin-menu-adminbus-tab = АдминАбуз
 admin-menu-atmos-tab = Атмос

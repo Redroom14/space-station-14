@@ -8,4 +8,4 @@ admin-player-actions-spawn = Заспавнить тут
 admin-player-spawn-failed = Не удалось найти подходящие координаты
 admin-player-actions-clone = Клонировать
 admin-player-actions-follow = Следовать
-admin-player-actions-confirm = Вы уверены?
+admin-player-actions-confirm = Уверен?
