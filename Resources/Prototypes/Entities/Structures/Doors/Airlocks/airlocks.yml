@@ -113,7 +113,7 @@
   - type: PaintableAirlock
     department: Security
   - type: Wires
-    layoutId: DWAirlockBrigMed
+    layoutId: AirlockSecurity
 
 - type: entity
   parent: Airlock
@@ -279,7 +279,7 @@
   - type: PaintableAirlock
     department: Security
   - type: Wires
-    layoutId: DWAirlockBrigMed   
+    layoutId: AirlockSecurity
 
 - type: entity
   parent: AirlockSecurityGlass # see standard
