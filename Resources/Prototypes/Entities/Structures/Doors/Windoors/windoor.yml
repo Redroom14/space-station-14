@@ -302,6 +302,14 @@
     access: [["Security"], ["Lawyer"]]
 
 - type: entity
+  parent: WindoorSecureSecurityLocked
+  id: DWWindoorSecureBrigMedLocked
+  suffix: Security/Medical, Locked
+  components:
+  - type: AccessReader
+    access: [["Security"], ["Medical"]]
+
+- type: entity
   parent: WindoorSecure
   id: WindoorSecureMedicalLocked
   suffix: Medical, Locked

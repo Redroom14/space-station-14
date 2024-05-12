@@ -344,6 +344,15 @@
       board: [ DoorElectronicsSecurity ]
 
 - type: entity
+  parent: DWAirlockBrigMed
+  id: DWAirlockBrigMedLocked # DW - Brigmedic Airlocks
+  suffix: Security/Medical, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DWDoorElectronicsBrigMed ]      
+
+- type: entity
   parent: AirlockSecurity
   id: AirlockDetectiveLocked
   suffix: Detective, Locked
@@ -707,6 +716,15 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSecurity ]
+
+- type: entity
+  parent: DWAirlockBrigMedGlass
+  id: DWAirlockBrigMedGlassLocked # DW - Brigmedic Airlocks
+  suffix: Security/Medical, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DWDoorElectronicsBrigMed ] 
 
 - type: entity
   parent: AirlockSecurityGlass

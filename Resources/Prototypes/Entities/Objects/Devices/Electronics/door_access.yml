@@ -233,6 +233,14 @@
 
 - type: entity
   parent: DoorElectronics
+  id: DWDoorElectronicsBrigMed # DW - Brigmedic Airlocks
+  suffix: Security/Medical, Locked
+  components:
+  - type: AccessReader
+    access: [["Security", "Medical"]]
+
+- type: entity
+  parent: DoorElectronics
   id: DoorElectronicsDetective
   suffix: Detective, Locked
   components:
