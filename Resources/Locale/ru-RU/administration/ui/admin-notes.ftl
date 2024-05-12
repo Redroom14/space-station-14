@@ -24,8 +24,8 @@ admin-notes-delete-confirm = Вы уверены?
 admin-notes-edited = Последнее изменение от { $author } в { $date }
 admin-notes-unbanned = Разбанил { $admin } в { $date }
 admin-notes-message-desc = [color=white]Вы получили { $count ->
-        [1] новое сообщение от администрации
-       *[other] новых сообщений от администрации
+        [1] новое сообщение от Лордов
+       *[other] новых сообщений от Лордов
     } с момента последней игры на сервере.[/color]
 admin-notes-message-admin = От [bold]{ $admin }[/bold], датировано { TOSTRING($date, "f") }:
 admin-notes-message-wait = Кнопки будут доступны через { $time } секунд.
@@ -63,14 +63,14 @@ admin-note-editor-expiry-label-params = Истекает: { $date } (через 
 admin-note-editor-expiry-label-expired = Истёк
 admin-note-editor-expiry-placeholder = Укажите срок действия (yyyy-MM-dd HH:mm:ss)
 admin-note-editor-submit = Подтвердить
-admin-note-editor-submit-confirm = Вы уверены?
+admin-note-editor-submit-confirm = Уверен?
 # Watchlist and message login
 admin-notes-watchlist = Наблюдение над { $player }: { $message }
-admin-notes-new-message = Вы получили админ сообщение от { $admin }: { $message }
+admin-notes-new-message = Вы получили сообщение Лорда от { $admin }: { $message }
 admin-notes-fallback-admin-name = [Система]
 # Admin remarks
-admin-remarks-command-description = Открыть страницу админ замечаний
-admin-remarks-command-error = Админ замечания были отключены
-admin-remarks-title = Админ замечания
+admin-remarks-command-description = Открыть страницу замечаний Лордов
+admin-remarks-command-error = Замечания Лордов были отключены
+admin-remarks-title = Замечания Лордов
 # Misc
 system-user = [Система]
