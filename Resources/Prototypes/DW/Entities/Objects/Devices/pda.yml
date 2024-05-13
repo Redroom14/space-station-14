@@ -1,14 +1,36 @@
 - type: entity
+  abstract: true
   parent: BasePDA
+  id: DWBasePDA
+  name: PDA
+  components:
+  - type: Sprite
+    sprite: DW/Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
+  - type: Icon
+    sprite: DW/Objects/Devices/pda.rsi
+    state: pda   
+
+- type: entity
+  parent: DWBasePDA
   id: PilotPDA
   name: pilot PDA
   description: Нas protection from cosmic radiation.
   components:
-    - type: Pda
-      id: PilotIDCard
-      state: pda-pilotofficer
-    - type: PdaBorderColor
-      borderColor: "#A32D26"
-      accentVColor: "#DFDFDF"
-    - type: Icon
-      state: pda-pilotofficer
+  - type: Pda
+    id: PilotIDCard
+    state: pda-pilotofficer
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+    accentVColor: "#DFDFDF"
+  - type: Icon
+    state: pda-pilotofficer
